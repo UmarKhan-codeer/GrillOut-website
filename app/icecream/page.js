@@ -16,9 +16,9 @@ function Ice_Cream() {
     {
       name: "Ice Cream",
       sizes: {
-        "2 Scoops": "189",
-        "3 Scoops": "269",
-        "Family Cup": "699",
+        "2 Scoops": "199",
+        "3 Scoops": "279",
+        "Family Cup": "749",
       },
       image: "/icecream.jpg",
     },

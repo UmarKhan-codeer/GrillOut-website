@@ -1,10 +1,11 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Dropdown2 from "@/Components/Dropdown2";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
-import Frappecinnos from "@/Components/Frappecinnos";
-import Iced_Latte from "@/Components/Iced_Latte";
+import Extratopping from "./Extratopping";
+import Dropdown2 from "./Dropdown2";
+import Heading from "./Heading";
+import OrderButton from "./OrderButton";
+import Frappecinnos from "./Frappecinnos";
+import Iced_Latte from "./Iced_Latte";
 
 function Smoothie () {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,25 +15,25 @@ function Smoothie () {
     {
       name: "GrillOut  Special Smoothie",
       sizes: {
-        PKR: "549",
+        PKR: "500",
       },
     },
     {
       name: "Strawberry Smoothie",
       sizes: {
-        PKR: "499",
+        PKR: "450",
       },
     },
     {
       name: "Bluberry Smoothie",
       sizes: {
-        PKR: "499",
+        PKR: "450",
       },
     },
     {
       name: "Raspberry Smoothie",
       sizes: {
-        PKR: "499",
+        PKR: "450",
       },
     },
   ];

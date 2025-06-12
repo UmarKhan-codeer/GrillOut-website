@@ -1,8 +1,14 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
+import Extratopping from "./Extratopping";
+import Dropdown from "./Dropdown";
+import Heading from "./Heading";
+import Pasta from "./Pasta";
+import Thaichinese from "./Thaichinese";
 import OrderButton from "./OrderButton";
+import Beefsteaks from "./Beefsteaks";
 
-function Beefsteaks() {
+function Steaks() {
   const [modalImage, setModalImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -12,31 +18,31 @@ function Beefsteaks() {
     {
       name: "Maxican Grilled",
       sizes: {
-        PKR: "2149",
+        PKR: "1399",
       },
     },
     {
       name: "Tarragon Grilled",
       sizes: {
-        PKR: "2149",
+        PKR: "1399",
       },
     },
     {
       name: "Mushroom Grilled", // New food item added
       sizes: {
-        PKR: "2149",
+        PKR: "1399",
       },
     },
     {
       name: "Moroccan Grilled", // New food item added
       sizes: {
-        PKR: "2149",
+        PKR: "1399",
       },
     },
     {
       name: "Smoky BBQ Grilled", // New food item added
       sizes: {
-        PKR: "2149",
+        PKR: "1399",
       },
     },
   ];
@@ -66,13 +72,15 @@ function Beefsteaks() {
   return (
     <>
       <section
-        className={`bg-black relative ${isVisible ? "fade-in-up" : ""}`}
+        className={`bg-black py-6 relative ${isVisible ? "fade-in-up" : ""}`}
         ref={ref}
       >
+        <Heading />
+        <Dropdown />
         <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">
-          Beef (Tenderloin)
+          Chicken Steaks
         </h2>
-        <div className="max-h-[450px] pb-60 md:pl-10">
+        <div className="max-h-[450px] md:pl-10">
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-4 w-full text-xs font-extrabold text-white max-w-[1000px] mx-auto">
             {foodItems.map((item, index) => (
               <article
@@ -118,8 +126,9 @@ function Beefsteaks() {
           </div>
         )}
       </section>
+      <Beefsteaks/>
     </>
   );
 }
 
-export default Beefsteaks;
+export default Steaks;

@@ -10,19 +10,19 @@ function Flavoured_Coffee () {
     {
       name: "Vanilla Latte",
       sizes: {
-        PKR: "450",
+        PKR: "549",
       },
     },
     {
       name: "Caramel Latte",
       sizes: {
-        PKR: "450",
+        PKR: "549",
       },
     },
     {
       name: "Hot Chocolate",
       sizes: {
-        PKR: "450",
+        PKR: "499",
       },
     },
     {

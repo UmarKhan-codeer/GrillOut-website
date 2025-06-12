@@ -14,14 +14,14 @@ function Wraps() {
     {
       name: "Arabic Roll",
       sizes: {
-        PKR: "620",
+        PKR: "649",
       },
       image: "/wrapsassets/arabicroll.png",
     },
     {
       name: "Behari Roll",
       sizes: {
-        PKR: "620",
+        PKR: "649",
       },
       image: "/wrapsassets/behariroll.png",
     },

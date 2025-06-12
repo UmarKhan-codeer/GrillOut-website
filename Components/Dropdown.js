@@ -18,7 +18,6 @@ const Dropdown = () => {
     { name: "Wraps", path: "/wraps" },
     { name: "Steaks", path: "/steaks" },
     { name: "Noodles", path: "/noodels" },
-    { name: "Dumplings", path: "/dumplings" },
     { name: "Rice and Thai Chinese", path: "/rice" },
   ];
 

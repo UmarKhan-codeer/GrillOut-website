@@ -14,28 +14,28 @@ function pasta() {
     {
       name: "Crunchy Pasta",
       sizes: {
-        PKR: "749",
+        PKR: "799",
       },
       image: "/pastaassets/crunchy.jpg",
     },
     {
       name: "Flaming Pasta",
       sizes: {
-        PKR: "749",
+        PKR: "799",
       },
       image: "/pastaassets/flamingpasta.png",
     },
     {
       name: "Alfredo Fresco",
       sizes: {
-        PKR: "799",
+        PKR: "899",
       },
       image: "/pastaassets/alfredo.jpg",
     },
     {
       name: "GrillOut Special Lasagne",
       sizes: {
-        PKR: "799",
+        PKR: "849",
       },
       image: "/pastaassets/lasagnea.jpg",
     },

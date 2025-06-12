@@ -24,7 +24,7 @@ function Lemonade () {
     {
       name: "Pinacolada",
       sizes: {
-        PKR: "450",
+        PKR: "499",
       },
     },
     {

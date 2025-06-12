@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🔥 GrillOut – Modern Restaurant Website
 
-## Getting Started
+GrillOut is a sleek, modern, and fully responsive restaurant website built with Next.js. It features animated sections, a beautiful UI, and seamless user interaction. Customers can directly place orders via WhatsApp, making it ideal for small to mid-sized food businesses.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- ✅ Built with **Next.js**
+- 💡 Fully **Responsive Design**
+- 🎨 Smooth **Animations** for enhanced UX
+- 📱 **WhatsApp Ordering Integration**
+- 📄 Pages: Home | Menu | About | Events | Contact
+- 🌐 SEO-friendly structure
+
+---
+
+## 📸 Preview
+
+![GrillOut Screenshot](./public/preview.PNG)
+
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js
+- **UI Library:** React
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion (if used)
+- **Deployment:** Vercel
+
+---
+
+## 📦 Getting Started (Development)
+
+To run this project locally:
 
 ```bash
+# Clone the repo
+git clone https://github.com/UmarKhan-codeer/grillout.git
+
+# Navigate to the project directory
+cd grillout
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open your browser at http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+💬 WhatsApp Order Integration
+Customers can click the "Order Now" button, which redirects them to WhatsApp with a pre-filled message:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+js
+Copy
+Edit
+const phone = "923001234567"; // Replace with your number
+const message = "Hello, I’d like to place an order from the GrillOut menu!";
+const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+window.open(url, '_blank');
+📤 Deployment
+This project is live and hosted on Vercel.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+🔗 Live Demo: coming soon
+🔗 Repository: https://github.com/UmarKhan-codeer/grillout
 
-## Learn More
+🙌 Author
+Umer Javed
 
-To learn more about Next.js, take a look at the following resources:
+🔗 LinkedIn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+💻 GitHub
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+🌐 Portfolio: coming soon
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+📃 License
+This project is open-source and available under the MIT License.

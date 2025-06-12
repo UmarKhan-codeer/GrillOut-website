@@ -15,31 +15,31 @@ function Steaks() {
     {
       name: "Maxican Grilled",
       sizes: {
-        PKR: "1399",
+        PKR: "1499",
       },
     },
     {
       name: "Tarragon Grilled",
       sizes: {
-        PKR: "1399",
+        PKR: "1499",
       },
     },
     {
       name: "Mushroom Grilled", // New food item added
       sizes: {
-        PKR: "1399",
+        PKR: "1499",
       },
     },
     {
       name: "Moroccan Grilled", // New food item added
       sizes: {
-        PKR: "1399",
+        PKR: "1499",
       },
     },
     {
       name: "Smoky BBQ Grilled", // New food item added
       sizes: {
-        PKR: "1399",
+        PKR: "1499",
       },
     },
   ];

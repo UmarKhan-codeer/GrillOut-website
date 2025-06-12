@@ -1,10 +1,12 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Dropdown from "@/Components/Dropdown";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
+import Extratopping from "./Extratopping";
+import Dropdown from "./Dropdown";
+import Wings from "./Wings";
+import Heading from "./Heading";
+import OrderButton from "./OrderButton";
 
-function Dumplings() {
+function Chickencorner() {
   const [modalImage, setModalImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -13,12 +15,13 @@ function Dumplings() {
   // Updated to include multiple sizes for one food item
   const foodItems = [
     {
-      name: "Dumplings",
+      name: "Arabic Broast",
       sizes: {
-        "5 Pcs": "420",
-        "10 Pcs": "840",
+        "1 Pc": "299",
+        "2 Pc": "569",
+        "5 Pc": "1349",
       },
-      image: "/dumplings/dumplings.jpg",
+      image: "/wingsassets/arabicbroast.jpg",
     },
   ];
 
@@ -56,9 +59,9 @@ function Dumplings() {
       ref={ref}
     >
       <Heading/>
-      <Dropdown/>
+      <Dropdown />
       <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">
-      Dumplings
+        Chicken Corner
       </h2>
       <div className="flex justify-center">
         <article className="flex flex-col items-center">
@@ -74,8 +77,8 @@ function Dumplings() {
           </h3>
           <div className="self-center mt-2 flex justify-between w-full max-w-xs">
             {Object.entries(foodItems[0].sizes).map(([size, price]) => (
-              <div key={size} className="flex flex-col text-yellow-400 items-center w-32">
-                <p className="text-lg  font-bold">{size}</p>
+              <div key={size} className="flex flex-col text-yellow-400 items-center w-1/3">
+                <p className="text-lg font-bold">{size}</p>
                 <p className="text-lg  font-bold">{price}</p>
               </div>
             ))}
@@ -104,8 +107,9 @@ function Dumplings() {
         </div>
       )}
     </section>
+    <Wings/>
     </>
   );
 }
 
-export default Dumplings;
+export default Chickencorner;

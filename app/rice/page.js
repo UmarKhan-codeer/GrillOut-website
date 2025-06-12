@@ -15,14 +15,14 @@ function Rice() {
     {
       name: "Vegetable Masala Rice",
       sizes: {
-        PKR: "269",
+        PKR: "299",
       },
       image: "/riceassets/masalarice.jpg",
     },
     {
       name: "Chicken Egg Fried Rice",
       sizes: {
-        PKR: "399",
+        PKR: "499",
       },
       image: "/riceassets/friedrice.jpg",
     },

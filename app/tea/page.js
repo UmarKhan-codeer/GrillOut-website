@@ -12,25 +12,25 @@ function Tea () {
     {
       name: "Mix Tea",
       sizes: {
-        PKR: "150",
+        PKR: "149",
       },
     },
     {
       name: "Matka Tea",
       sizes: {
-        PKR: "200",
+        PKR: "199",
       },
     },
     {
       name: "Cardamom Tea",
       sizes: {
-        PKR: "170",
+        PKR: "169",
       },
     },
     {
       name: "Green Tea",
       sizes: {
-        PKR: "100",
+        PKR: "99",
       },
     },
   ];

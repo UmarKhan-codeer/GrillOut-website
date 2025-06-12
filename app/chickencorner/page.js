@@ -16,9 +16,9 @@ function Chickencorner() {
     {
       name: "Arabic Broast",
       sizes: {
-        "1 Pc": "299",
-        "2 Pc": "569",
-        "5 Pc": "1349",
+        "1 Pc": "329",
+        "2 Pc": "639",
+        "5 Pc": "1599",
       },
       image: "/wingsassets/arabicbroast.jpg",
     },

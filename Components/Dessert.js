@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Dropdown3 from "@/Components/Dropdown3";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
+import Dropdown3 from "./Dropdown3";
+import Heading from "./Heading";
+import OrderButton from "./OrderButton";
 
 function Dessert() {
   const [isVisible, setIsVisible] = useState(false);
@@ -19,7 +19,7 @@ function Dessert() {
     {
       name: "Hot Brownie",
       sizes: {
-        PKR: "349",
+        PKR: "350",
       },
       description: "with fudge syrup"
     },

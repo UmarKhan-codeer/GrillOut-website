@@ -14,7 +14,7 @@ function Sandaes() {
     {
       name: "Fudge Brownie",
       sizes: {
-        PKR: "499",
+        PKR: "449",
       },
       description: "A wonderfull mix of vanilla and chocolate ice-cream, brownie pieces, served with chocolate sauce.",
       image: "/sandaes/fudgebrownie.png",
@@ -22,7 +22,7 @@ function Sandaes() {
     {
       name: "Banana Split",
       sizes: {
-        PKR: "499",
+        PKR: "449",
       },
       description: "A mouth watering combo of banana and vanilla ice-cream, served with mix fruit cocktail, avalenched with strawberry and caramel sauce",
       image: "/sandaes/bananasplit.jpg",

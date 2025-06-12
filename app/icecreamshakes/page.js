@@ -12,61 +12,61 @@ function Ice_Cream_Shakes () {
     {
       name: "Oreo Shake",
       sizes: {
-        PKR: "450",
+        PKR: "499",
       },
     },
     {
       name: "Nutella Shake",
       sizes: {
-        PKR: "499",
+        PKR: "549",
       },
     },
     {
       name: "Brownie Shake",
       sizes: {
-        PKR: "499",
+        PKR: "549",
       },
     },
     {
       name: "Mango Shake",
       sizes: {
-        PKR: "450",
+        PKR: "499",
       },
     },
     {
       name: "Coconut Shake",
       sizes: {
-        PKR: "450",
+        PKR: "499",
       },
     },
     {
       name: "GrillOut Special Shake",
       sizes: {
-        PKR: "450",
+        PKR: "499",
       },
     },
     {
       name: "Chocolate Shake",
       sizes: {
-        PKR: "450",
+        PKR: "499",
       },
     },
     {
       name: "Vanilla Shake",
       sizes: {
-        PKR: "450",
+        PKR: "499",
       },
     },
     {
       name: "Strawberry Shake",
       sizes: {
-        PKR: "450",
+        PKR: "499",
       },
     },
     {
       name: "Coffee Shake",
       sizes: {
-        PKR: "450",
+        PKR: "499",
       },
     },
   ];

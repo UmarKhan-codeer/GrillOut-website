@@ -13,13 +13,13 @@ function Hot_Coffee () {
     {
       name: "Cappuccino",
       sizes: {
-        PKR: "400",
+        PKR: "499",
       },
     },
     {
       name: "Cafe Latte",
       sizes: {
-        PKR: "400",
+        PKR: "499",
       },
     },
     {

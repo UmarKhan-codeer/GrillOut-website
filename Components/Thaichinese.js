@@ -11,28 +11,28 @@ function Thaichinese() {
     {
       name: "Chicken Chilli Dry With Rice",
       sizes: {
-        PKR: "849",
+        PKR: "899",
       },
       image: "/riceassets/chillidryrice.png",
     },
     {
       name: "Beef Chilli Dry With Rice",
       sizes: {
-        PKR: "999",
+        PKR: "1199",
       },
       image: "/riceassets/beefrice.jpg",
     },
     {
       name: "Chicken Manchurian With Rice",
       sizes: {
-        PKR: "749",
+        PKR: "849",
       },
       image: "/riceassets/chicken-manchurian.jpg",
     },
     {
       name: "Oyster Chicken With Rice",
       sizes: {
-        PKR: "749",
+        PKR: "849",
       },
       image: "/riceassets/oysterchickenrice.jpg",
     },

@@ -1,10 +1,13 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Dropdown from "@/Components/Dropdown";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
+import Extratopping from "./Extratopping";
+import Dropdown2 from "./Dropdown2";
+import Heading from "./Heading";
+import Pasta from "./Pasta";
+import Thaichinese from "./Thaichinese";
+import OrderButton from "./OrderButton";
 
-function Calzone() {
+function Sandaes() {
   const [modalImage, setModalImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -12,25 +15,20 @@ function Calzone() {
 
   const foodItems = [
     {
-      name: "GrillOut Special Platter",
+      name: "Fudge Brownie",
       sizes: {
-        PKR: "1149",
+        PKR: "499",
       },
-      image: "/calzoneassets/specialplatter.jpg",
+      description: "A wonderfull mix of vanilla and chocolate ice-cream, brownie pieces, served with chocolate sauce.",
+      image: "/sandaes/fudgebrownie.png",
     },
     {
-      name: "Calzone",
+      name: "Banana Split",
       sizes: {
-        PKR: "890",
+        PKR: "499",
       },
-      image: "/calzoneassets/calzone.jpg",
-    },
-    {
-      name: "Cheezy Sticks",
-      sizes: {
-        PKR: "549",
-      },
-      image: "/calzoneassets/Cheezysticks.jpeg",
+      description: "A mouth watering combo of banana and vanilla ice-cream, served with mix fruit cocktail, avalenched with strawberry and caramel sauce",
+      image: "/sandaes/bananasplit.jpg",
     },
   ];
 
@@ -62,17 +60,16 @@ function Calzone() {
   }, []);
 
   return (
+    <>
     <section
       className={`bg-black py-6 relative ${isVisible ? "fade-in-up" : ""}`}
       ref={ref}
     >
       <Heading/>
-      <Dropdown />
-      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Calzone</h2>
-
-      {/* Centered container for food items with added left margin */}
-      <div className="flex items-center justify-center min-h-[400px] md:pl-48 "> {/* Added pl-4 for padding-left */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full text-xs font-extrabold text-white max-w-[800px]">
+      <Dropdown2/>
+      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Sandaes</h2>
+      <div className="max-h-[450px] md:pl-96 ">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 w-full text-xs font-extrabold text-white max-w-[800px] mx-auto">
           {foodItems.map((item, index) => (
             <article className="flex flex-col items-center" key={index}>
               <img
@@ -85,6 +82,9 @@ function Calzone() {
               <h3 className="self-center mt-3 text-xl w-full text-center min-w-[120px]">
                 {item.name}
               </h3>
+              <p className="self-center mt-1 text-center text-sm text-gray-300">
+                  {item.description}
+                </p>
               <div className="self-center mt-2">
                 {Object.entries(item.sizes).map(([size, price]) => (
                   <p key={size} className="text-lg w-full text-yellow-400 flex justify-between mt-1">
@@ -98,7 +98,6 @@ function Calzone() {
           ))}
         </div>
       </div>
-
       {isModalOpen && (
         <div
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75"
@@ -120,7 +119,8 @@ function Calzone() {
         </div>
       )}
     </section>
+    </>
   );
 }
 
-export default Calzone;
+export default Sandaes;

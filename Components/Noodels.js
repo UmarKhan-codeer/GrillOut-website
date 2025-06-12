@@ -1,8 +1,9 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Dropdown from "@/Components/Dropdown";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
+import Extratopping from "./Extratopping";
+import Dropdown from "./Dropdown";
+import Heading from "./Heading";
+import OrderButton from "./OrderButton";
 
 function Noodels() {
   const [modalImage, setModalImage] = useState(null);
@@ -15,7 +16,7 @@ function Noodels() {
     {
       name: "Chicken Chowmein",
       sizes: {
-        "PKR": "749",
+        "PKR": "699",
       },
       image: "/noodels/chomein.jpg",
     },

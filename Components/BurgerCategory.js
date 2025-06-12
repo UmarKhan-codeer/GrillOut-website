@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Dropdown from "@/Components/Dropdown";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
+import Dropdown from "./Dropdown";
+import Heading from "./Heading";
+import OrderButton from "./OrderButton";
 
-function Calzone() {
+function BurgerCategory() {
   const [modalImage, setModalImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -12,25 +12,74 @@ function Calzone() {
 
   const foodItems = [
     {
-      name: "GrillOut Special Platter",
+      name: "Ba Zinga",
       sizes: {
-        PKR: "1149",
+        PKR: "499",
       },
-      image: "/calzoneassets/specialplatter.jpg",
+      image: "/burgerassets/bazinga.jpg",
     },
     {
-      name: "Calzone",
+      name: "Jack's Grilled",
       sizes: {
-        PKR: "890",
+        PKR: "499",
       },
-      image: "/calzoneassets/calzone.jpg",
+      image: "/burgerassets/jackburger.png",
     },
     {
-      name: "Cheezy Sticks",
+      name: "Rock Star Grilled",
       sizes: {
-        PKR: "549",
+        PKR: "599",
       },
-      image: "/calzoneassets/Cheezysticks.jpeg",
+      image: "/burgerassets/rockstarburger.jpg",
+    },
+    {
+      name: "Lava Burger",
+      sizes: {
+        PKR: "599",
+      },
+      image: "/burgerassets/lavaburger.jpg",
+    },
+    {
+      name: "Fillet o Fire",
+      sizes: {
+        PKR: "499",
+      },
+      image: "/burgerassets/fillitofire.jpg",
+    },
+    {
+      name: "Crispo Burger",
+      sizes: {
+        PKR: "349",
+      },
+      image: "/burgerassets/crispoburger.jpg",
+    },
+    {
+      name: "Flango Burger",
+      sizes: {
+        PKR: "599",
+      },
+      image: "/burgerassets/flango.jpg",
+    },
+    {
+      name: "Flammer Burger",
+      sizes: {
+        PKR: "599",
+      },
+      image: "/burgerassets/flammerburger.jpg",
+    },
+    {
+      name: "Beef Steak Burger",
+      sizes: {
+        PKR: "649",
+      },
+      image: "/burgerassets/beefsteakburger.jpg",
+    },
+    {
+      name: "Zooper Beef",
+      sizes: {
+        PKR: "569",
+      },
+      image: "/burgerassets/zooper.jpg",
     },
   ];
 
@@ -67,12 +116,11 @@ function Calzone() {
       ref={ref}
     >
       <Heading/>
-      <Dropdown />
-      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Calzone</h2>
-
-      {/* Centered container for food items with added left margin */}
-      <div className="flex items-center justify-center min-h-[400px] md:pl-48 "> {/* Added pl-4 for padding-left */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full text-xs font-extrabold text-white max-w-[800px]">
+      
+      <Dropdown/>
+      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Burgers</h2>
+      <div className="max-h-[450px]">
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 w-full text-xs font-extrabold text-white max-w-[800px] mx-auto">
           {foodItems.map((item, index) => (
             <article className="flex flex-col items-center" key={index}>
               <img
@@ -98,7 +146,6 @@ function Calzone() {
           ))}
         </div>
       </div>
-
       {isModalOpen && (
         <div
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75"
@@ -123,4 +170,4 @@ function Calzone() {
   );
 }
 
-export default Calzone;
+export default BurgerCategory;

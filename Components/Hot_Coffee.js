@@ -1,38 +1,37 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Dropdown2 from "@/Components/Dropdown2";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
-import Frappecinnos from "@/Components/Frappecinnos";
-import Iced_Latte from "@/Components/Iced_Latte";
+import Dropdown3 from "./Dropdown3";
+import Heading from "./Heading";
+import OrderButton from "./OrderButton";
+import Flavoured_Coffee from "./Flavoured_Coffee";
 
-function Smoothie () {
+function Hot_Coffee () {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
   const foodItems = [
     {
-      name: "GrillOut  Special Smoothie",
+      name: "Cappuccino",
       sizes: {
-        PKR: "549",
+        PKR: "400",
       },
     },
     {
-      name: "Strawberry Smoothie",
+      name: "Cafe Latte",
       sizes: {
-        PKR: "499",
+        PKR: "400",
       },
     },
     {
-      name: "Bluberry Smoothie",
+      name: "Black Coffee",
       sizes: {
-        PKR: "499",
+        PKR: "250",
       },
     },
     {
-      name: "Raspberry Smoothie",
+      name: "Espesso Shot",
       sizes: {
-        PKR: "499",
+        PKR: "250",
       },
     },
   ];
@@ -61,8 +60,8 @@ function Smoothie () {
       ref={ref}
     >
       <Heading/>
-      <Dropdown2 />
-      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Smoothie</h2>
+      <Dropdown3 />
+      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Hot Coffee</h2>
       <div className="max-h-[450px]">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 w-full text-xs font-extrabold text-white max-w-[800px] mx-auto">
           {foodItems.map((item, index) => (
@@ -84,10 +83,9 @@ function Smoothie () {
         </div>
       </div>
     </section>
-    <Frappecinnos/>
-    <Iced_Latte/>
+    <Flavoured_Coffee/>
     </>
   );
 }
 
-export default Smoothie ;
+export default Hot_Coffee ;

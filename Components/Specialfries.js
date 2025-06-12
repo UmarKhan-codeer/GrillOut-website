@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Dropdown from "@/Components/Dropdown";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
+import Dropdown from "./Dropdown";
+import Heading from "./Heading";
+import OrderButton from "./OrderButton";
 
-function Calzone() {
+function Specialfries() {
   const [modalImage, setModalImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -12,26 +12,26 @@ function Calzone() {
 
   const foodItems = [
     {
-      name: "GrillOut Special Platter",
+      name: "Chilli Cheese Fries",
       sizes: {
-        PKR: "1149",
+        PKR: "499",
       },
-      image: "/calzoneassets/specialplatter.jpg",
+      image: "/friesassets/chillicheesefries.jpg",
     },
     {
-      name: "Calzone",
+      name: "Loaded Pizza Fries",
       sizes: {
-        PKR: "890",
+        PKR: "599",
       },
-      image: "/calzoneassets/calzone.jpg",
+      image: "/friesassets/pizzafries.jpg",
     },
     {
-      name: "Cheezy Sticks",
-      sizes: {
-        PKR: "549",
+        name: "Loaded Cheese Fries",
+        sizes: {
+          PKR: "549",
+        },
+        image: "/friesassets/cheezfries.jpg",
       },
-      image: "/calzoneassets/Cheezysticks.jpeg",
-    },
   ];
 
   const handleImageClick = (image) => {
@@ -68,7 +68,7 @@ function Calzone() {
     >
       <Heading/>
       <Dropdown />
-      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Calzone</h2>
+      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Special Fries</h2>
 
       {/* Centered container for food items with added left margin */}
       <div className="flex items-center justify-center min-h-[400px] md:pl-48 "> {/* Added pl-4 for padding-left */}
@@ -123,4 +123,4 @@ function Calzone() {
   );
 }
 
-export default Calzone;
+export default Specialfries;

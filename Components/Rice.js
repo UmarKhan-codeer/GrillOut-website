@@ -1,10 +1,13 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Dropdown from "@/Components/Dropdown";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
+import Extratopping from "./Extratopping";
+import Dropdown from "./Dropdown";
+import Heading from "./Heading";
+import Pasta from "./Pasta";
+import Thaichinese from "./Thaichinese";
+import OrderButton from "./OrderButton";
 
-function Calzone() {
+function Rice() {
   const [modalImage, setModalImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -12,25 +15,18 @@ function Calzone() {
 
   const foodItems = [
     {
-      name: "GrillOut Special Platter",
+      name: "Vegetable Masala Rice",
       sizes: {
-        PKR: "1149",
+        PKR: "269",
       },
-      image: "/calzoneassets/specialplatter.jpg",
+      image: "/riceassets/masalarice.jpg",
     },
     {
-      name: "Calzone",
+      name: "Chicken Egg Fried Rice",
       sizes: {
-        PKR: "890",
+        PKR: "399",
       },
-      image: "/calzoneassets/calzone.jpg",
-    },
-    {
-      name: "Cheezy Sticks",
-      sizes: {
-        PKR: "549",
-      },
-      image: "/calzoneassets/Cheezysticks.jpeg",
+      image: "/riceassets/friedrice.jpg",
     },
   ];
 
@@ -62,17 +58,16 @@ function Calzone() {
   }, []);
 
   return (
+    <>
     <section
       className={`bg-black py-6 relative ${isVisible ? "fade-in-up" : ""}`}
       ref={ref}
     >
       <Heading/>
-      <Dropdown />
-      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Calzone</h2>
-
-      {/* Centered container for food items with added left margin */}
-      <div className="flex items-center justify-center min-h-[400px] md:pl-48 "> {/* Added pl-4 for padding-left */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full text-xs font-extrabold text-white max-w-[800px]">
+      <Dropdown/>
+      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Rice</h2>
+      <div className="max-h-[450px] md:pl-96 ">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 w-full text-xs font-extrabold text-white max-w-[800px] mx-auto">
           {foodItems.map((item, index) => (
             <article className="flex flex-col items-center" key={index}>
               <img
@@ -98,7 +93,6 @@ function Calzone() {
           ))}
         </div>
       </div>
-
       {isModalOpen && (
         <div
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75"
@@ -120,7 +114,9 @@ function Calzone() {
         </div>
       )}
     </section>
+    <Thaichinese/>
+    </>
   );
 }
 
-export default Calzone;
+export default Rice;

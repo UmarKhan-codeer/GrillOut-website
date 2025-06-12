@@ -1,56 +1,51 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Dropdown from "./Dropdown";
+import Heading from "./Heading";
 import OrderButton from "./OrderButton";
 
-function Wings() {
+function Appetizer() {
     const [modalImage, setModalImage] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef(null);
 
     const foodItems = [
-        {   
-        name: "Fried Wings",
-      sizes: {
-        "5 Pcs": "449",
-        "10 Pcs": "849",
-      },
-      image: "/wingsassets/friedwings.jpg",
-    },
-        {   
-        name: "Honey Wings",
-      sizes: {
-        "5 Pcs": "499",
-        "10 Pcs": "949",
-      },
-      image: "/wingsassets/honeywings.jpg",
-    },
-        {   
-        name: "Grilled Wings",
-      sizes: {
-        "5 Pcs": "389",
-        "10 Pcs": "749",
-      },
-      image: "/wingsassets/grilledwings.jpg",
-    },
-        {   
-        name: "Peri Peri Wings",
-      sizes: {
-        "5 Pcs": "449",
-        "10 Pcs": "849",
-      },
-      image: "/wingsassets/periwings.jpg",
-    },
-        {   
-        name: "BBQ Wings",
-      sizes: {
-        "5 Pcs": "449",
-        "10 Pcs": "799",
-      },
-      image: "/wingsassets/bbqwings.jpg",
-    },
-
+        {
+            name: "Plain Fries",
+            sizes: {
+                small: "______",
+                medium: "299",
+                large: "379",
+            },
+            image: "/appetizerassets/frenchfries.jpg",
+        },
+        {
+            name: "Mayo Fries",
+            sizes: {
+                small: "______",
+                medium: "379",
+                large: "479",
+            },
+            image: "/appetizerassets/mayofries.jpg",
+        },
+        {
+            name: "Cajun Fried Chicken",
+            sizes: {
+                medium: "______",
+                large: "769",
+            },
+            image: "/appetizerassets/cajun-fried-chicken.jpg",
+        },
+        {
+            name: "Nuggets",
+            sizes: {
+                small: "______",
+                "5 pcs": "349",
+                "10 pcs": "689",
+            },
+            image: "/appetizerassets/nuggets.jpg",
+        },
     ];
 
     const handleImageClick = (image) => {
@@ -82,12 +77,12 @@ function Wings() {
 
     return (
         <section
-            className={`bg-black  relative ${isVisible ? "fade-in-up" : ""}`}
+            className={`bg-black py-6 relative ${isVisible ? "fade-in-up" : ""}`}
             ref={ref}
         >
-            
-            
-            <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Chicken Wings</h2>
+            <Heading/>
+            <Dropdown />
+            <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Appetizers</h2>
             <div className="max-h-[450px]">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 w-full text-xs font-extrabold text-white max-w-[800px] mx-auto">
                     {foodItems.map((item, index) => (
@@ -110,7 +105,7 @@ function Wings() {
                                     </p>
                                 ))}
                             </div>
-                           <OrderButton/>
+                            <OrderButton/>
                         </article>
                     ))}
                 </div>
@@ -139,4 +134,4 @@ function Wings() {
     );
 }
 
-export default Wings;
+export default Appetizer;

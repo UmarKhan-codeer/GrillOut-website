@@ -10,19 +10,19 @@ function Frappecinnos () {
     {
       name: "Caramel Frappe",
       sizes: {
-        PKR: "599",
+        PKR: "649",
       },
     },
     {
       name: "Nutella Frappe",
       sizes: {
-        PKR: "599",
+        PKR: "649",
       },
     },
     {
       name: "Vanilla Frappe",
       sizes: {
-        PKR: "599",
+        PKR: "649",
       },
     },
   ];

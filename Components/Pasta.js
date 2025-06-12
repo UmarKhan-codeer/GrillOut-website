@@ -1,10 +1,11 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Dropdown from "@/Components/Dropdown";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
+import Extratopping from "./Extratopping";
+import Dropdown from "./Dropdown";
+import Heading from "./Heading";
+import OrderButton from "./OrderButton";
 
-function Calzone() {
+function Pasta() {
   const [modalImage, setModalImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -12,25 +13,32 @@ function Calzone() {
 
   const foodItems = [
     {
-      name: "GrillOut Special Platter",
+      name: "Crunchy Pasta",
       sizes: {
-        PKR: "1149",
+        PKR: "749",
       },
-      image: "/calzoneassets/specialplatter.jpg",
+      image: "/pastaassets/crunchy.jpg",
     },
     {
-      name: "Calzone",
+      name: "Flaming Pasta",
       sizes: {
-        PKR: "890",
+        PKR: "749",
       },
-      image: "/calzoneassets/calzone.jpg",
+      image: "/pastaassets/flamingpasta.png",
     },
     {
-      name: "Cheezy Sticks",
+      name: "Alfredo Fresco",
       sizes: {
-        PKR: "549",
+        PKR: "799",
       },
-      image: "/calzoneassets/Cheezysticks.jpeg",
+      image: "/pastaassets/alfredo.jpg",
+    },
+    {
+      name: "GrillOut Special Lasagne",
+      sizes: {
+        PKR: "799",
+      },
+      image: "/pastaassets/lasagnea.jpg",
     },
   ];
 
@@ -68,11 +76,9 @@ function Calzone() {
     >
       <Heading/>
       <Dropdown />
-      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Calzone</h2>
-
-      {/* Centered container for food items with added left margin */}
-      <div className="flex items-center justify-center min-h-[400px] md:pl-48 "> {/* Added pl-4 for padding-left */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full text-xs font-extrabold text-white max-w-[800px]">
+      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Pasta</h2>
+      <div className="max-h-[450px]">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 w-full text-xs font-extrabold text-white max-w-[800px] mx-auto">
           {foodItems.map((item, index) => (
             <article className="flex flex-col items-center" key={index}>
               <img
@@ -98,7 +104,6 @@ function Calzone() {
           ))}
         </div>
       </div>
-
       {isModalOpen && (
         <div
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75"
@@ -123,4 +128,4 @@ function Calzone() {
   );
 }
 
-export default Calzone;
+export default Pasta;

@@ -1,38 +1,37 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Dropdown2 from "@/Components/Dropdown2";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
-import Frappecinnos from "@/Components/Frappecinnos";
-import Iced_Latte from "@/Components/Iced_Latte";
+import Dropdown3 from "./Dropdown3";
+import Heading from "./Heading";
+import OrderButton from "./OrderButton";
+import Flavoured_Coffee from "./Flavoured_Coffee";
 
-function Smoothie () {
+function Tea () {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
   const foodItems = [
     {
-      name: "GrillOut  Special Smoothie",
+      name: "Mix Tea",
       sizes: {
-        PKR: "549",
+        PKR: "150",
       },
     },
     {
-      name: "Strawberry Smoothie",
+      name: "Matka Tea",
       sizes: {
-        PKR: "499",
+        PKR: "200",
       },
     },
     {
-      name: "Bluberry Smoothie",
+      name: "Cardamom Tea",
       sizes: {
-        PKR: "499",
+        PKR: "170",
       },
     },
     {
-      name: "Raspberry Smoothie",
+      name: "Green Tea",
       sizes: {
-        PKR: "499",
+        PKR: "100",
       },
     },
   ];
@@ -61,8 +60,8 @@ function Smoothie () {
       ref={ref}
     >
       <Heading/>
-      <Dropdown2 />
-      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Smoothie</h2>
+      <Dropdown3 />
+      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Tea</h2>
       <div className="max-h-[450px]">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 w-full text-xs font-extrabold text-white max-w-[800px] mx-auto">
           {foodItems.map((item, index) => (
@@ -84,10 +83,8 @@ function Smoothie () {
         </div>
       </div>
     </section>
-    <Frappecinnos/>
-    <Iced_Latte/>
     </>
   );
 }
 
-export default Smoothie ;
+export default Tea ;

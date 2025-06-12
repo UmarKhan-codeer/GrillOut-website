@@ -1,10 +1,11 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react"
-import Dropdown from "@/Components/Dropdown";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
+import React, { useState, useEffect, useRef } from "react";
+import Extratopping from "./Extratopping";
+import Dropdown from "./Dropdown";
+import Heading from "./Heading";
+import OrderButton from "./OrderButton";
 
-function BurgerCategory() {
+function PizzaCategory() {
   const [modalImage, setModalImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -12,74 +13,131 @@ function BurgerCategory() {
 
   const foodItems = [
     {
-      name: "Ba Zinga",
+      name: "Crown Crust",
       sizes: {
-        PKR: "519",
+        small: "______",
+        medium: "1199",
+        large: "1699",
       },
-      image: "/burgerassets/bazinga.jpg",
+      image: "pizzaassets/crowncrust.jpg",
     },
     {
-      name: "Jack's Grilled",
+      name: "Square Pizza",
       sizes: {
-        PKR: "519",
+        small: "749",
+        medium: "1299",
+        large: "1849",
       },
-      image: "/burgerassets/jackburger.png",
+      image: "pizzaassets/squarepizza.jpg",
     },
     {
-      name: "Rock Star Grilled",
+      name: "Stuffed Crust",
       sizes: {
-        PKR: "649",
+        small: "______",
+        medium: "1249",
+        large: "1849",
       },
-      image: "/burgerassets/rockstarburger.jpg",
+      image: "pizzaassets/stuffcrust.jpg",
     },
     {
-      name: "Lava Burger",
+      name: "Karara Tikka",
       sizes: {
-        PKR: "649",
+        small: "______",
+        medium: "1099",
+        large: "1599",
       },
-      image: "/burgerassets/lavaburger.jpg",
+      image: "/pizzaassets/kararatikka.jpg",
     },
     {
-      name: "Fillet o Fire",
+      name: "GrillOut Special",
       sizes: {
-        PKR: "549",
+        small: "699",
+        medium: "1049",
+        large: "1599",
       },
-      image: "/burgerassets/fillitofire.jpg",
+      image: "/pizzaassets/specialpizza.jpg",
     },
     {
-      name: "Crispo Burger",
+      name: "Seekh Kabab",
       sizes: {
-        PKR: "399",
+        small: "699",
+        medium: "1049",
+        large: "1599",
       },
-      image: "/burgerassets/crispoburger.jpg",
+      image: "/pizzaassets/seekhkabab.jpg",
+    },
+    // New three items
+    {
+      name: "Shahi Mughlai",
+      sizes: {
+        small: "649",
+        medium: "1049",
+        large: "1549",
+      },
+      image: "/pizzaassets/shahimuglai.jpg", // Replace with actual image URL
     },
     {
-      name: "Flango Burger",
+      name: "Chicken Supreme",
       sizes: {
-        PKR: "599",
+        small: "649",
+        medium: "1049",
+        large: "1549",
       },
-      image: "/burgerassets/flango.jpg",
+      image: "/pizzaassets/supreem.jpg", // Replace with actual image URL
     },
     {
-      name: "Flammer Burger",
+      name: "Chicken Tikka",
       sizes: {
-        PKR: "599",
+        small: "649",
+        medium: "1049",
+        large: "1549",
       },
-      image: "/burgerassets/flammerburger.jpg",
+      image: "/pizzaassets/tikkapizza.webp", // Replace with actual image URL
     },
     {
-      name: "Beef Steak Burger",
+      name: "Chicken Fajita",
       sizes: {
-        PKR: "699",
+        small: "649",
+        medium: "1049",
+        large: "1549",
       },
-      image: "/burgerassets/beefsteakburger.jpg",
+      image: "/pizzaassets/fajita.jpg", // Replace with actual image URL
     },
     {
-      name: "Zooper Beef",
+      name: "Chicken Tandoori",
       sizes: {
-        PKR: "599",
+        small: "649",
+        medium: "1049", 
+        large: "1549",
       },
-      image: "/burgerassets/zooper.jpg",
+      image: "/pizzaassets/tandooripizza.jpg", // Replace with actual image URL
+    },
+    {
+      name: "Peri Peri Special",
+      sizes: {
+        small: "649",
+        medium: "1049",
+        large: "1549",
+      },
+      image: "/pizzaassets/peripizza.jpg", // Replace with actual image URL
+    },
+    {
+      name: "Cheese Lover",
+      sizes: {
+        small: "649",
+        medium: "1049",
+        large: "1549",
+      },
+      image: "/pizzaassets/cheeselover.jpg", // Replace with actual image URL
+    },
+    {
+      name: "Hot n Spicy",
+      sizes: {
+        small: "649",
+        medium: "1049",
+        large: "1549",
+      },
+      image: "/pizzaassets/hotnspicy.jpg", // Replace with actual image URL
     },
   ];
 
@@ -116,11 +174,10 @@ function BurgerCategory() {
       ref={ref}
     >
       <Heading/>
-      
-      <Dropdown/>
-      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Burgers</h2>
-      <div className="max-h-[450px]">
-        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 w-full text-xs font-extrabold text-white max-w-[800px] mx-auto">
+      <Dropdown />
+      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Pizza</h2>
+      <div className="max-h-[450px] overflow-y-auto overflow-x-hidden scrollable-container">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 w-full text-xs font-extrabold text-white max-w-[800px] mx-auto">
           {foodItems.map((item, index) => (
             <article className="flex flex-col items-center" key={index}>
               <img
@@ -146,6 +203,9 @@ function BurgerCategory() {
           ))}
         </div>
       </div>
+
+      <Extratopping />
+
       {isModalOpen && (
         <div
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75"
@@ -170,4 +230,4 @@ function BurgerCategory() {
   );
 }
 
-export default BurgerCategory;
+export default PizzaCategory;

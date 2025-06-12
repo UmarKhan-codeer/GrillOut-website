@@ -15,8 +15,8 @@ function Appetizer() {
             name: "Plain Fries",
             sizes: {
                 small: "______",
-                medium: "299",
-                large: "379",
+                medium: "329",
+                large: "399",
             },
             image: "/appetizerassets/frenchfries.jpg",
         },
@@ -24,27 +24,28 @@ function Appetizer() {
             name: "Mayo Fries",
             sizes: {
                 small: "______",
-                medium: "379",
-                large: "479",
+                medium: "399",
+                large: "499",
             },
             image: "/appetizerassets/mayofries.jpg",
-        },
-        {
-            name: "Cajun Fried Chicken",
-            sizes: {
-                medium: "______",
-                large: "769",
-            },
-            image: "/appetizerassets/cajun-fried-chicken.jpg",
         },
         {
             name: "Nuggets",
             sizes: {
                 small: "______",
-                "5 pcs": "349",
-                "10 pcs": "689",
+                "5 pcs": "379",
+                "10 pcs": "749",
             },
             image: "/appetizerassets/nuggets.jpg",
+        },
+        {
+            name: "Dumplings",
+            sizes: {
+                small: "______",
+                "5 pcs": "399",
+                "10 pcs": "749",
+            },
+            image: "/dumplings/dumplings.jpg",
         },
     ];
 

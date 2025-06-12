@@ -1,38 +1,103 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Dropdown2 from "@/Components/Dropdown2";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
-import Frappecinnos from "@/Components/Frappecinnos";
-import Iced_Latte from "@/Components/Iced_Latte";
+import Extratopping from "./Extratopping";
+import Dropdown2 from "./Dropdown2";
+import Heading from "./Heading";
+import OrderButton from "./OrderButton";
 
-function Smoothie () {
+function Lemonade () {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
   const foodItems = [
     {
-      name: "GrillOut  Special Smoothie",
+      name: "Mint Margaretta",
       sizes: {
-        PKR: "549",
+        PKR: "300",
       },
     },
     {
-      name: "Strawberry Smoothie",
+      name: "Spanish Margaretta",
       sizes: {
-        PKR: "499",
+        PKR: "300",
       },
     },
     {
-      name: "Bluberry Smoothie",
+      name: "Pinacolada",
       sizes: {
-        PKR: "499",
+        PKR: "450",
       },
     },
     {
-      name: "Raspberry Smoothie",
+      name: "Electric Lemonade",
       sizes: {
-        PKR: "499",
+        PKR: "400",
+      },
+    },
+    {
+      name: "Strawberry Lemonade",
+      sizes: {
+        PKR: "450",
+      },
+    },
+    {
+      name: "Strawberry Mojito",
+      sizes: {
+        PKR: "400",
+      },
+    },
+    {
+      name: "Mint Mojito",
+      sizes: {
+        PKR: "400",
+      },
+    },
+    {
+      name: "Plain Lemonade",
+      sizes: {
+        PKR: "250",
+      },
+    },
+    {
+      name: "Blueberry Chiller",
+      sizes: {
+        PKR: "400",
+      },
+    },
+    {
+      name: "Strawberry Chiller",
+      sizes: {
+        PKR: "400",
+      },
+    },
+    {
+      name: "Special Chiller",
+      sizes: {
+        PKR: "450",
+      },
+    },
+    {
+      name: "Peech Shooter Soda",
+      sizes: {
+        PKR: "350",
+      },
+    },
+    {
+      name: "Raspberry Chiller",
+      sizes: {
+        PKR: "400",
+      },
+    },
+    {
+      name: "Peech Ice Tea",
+      sizes: {
+        PKR: "400",
+      },
+    },
+    {
+      name: "Fresh Lime",
+      sizes: {
+        PKR: "150",
       },
     },
   ];
@@ -55,14 +120,13 @@ function Smoothie () {
   }, []);
 
   return (
-    <>
     <section
       className={`bg-black py-6 relative ${isVisible ? "fade-in-up" : ""}`}
       ref={ref}
     >
       <Heading/>
       <Dropdown2 />
-      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Smoothie</h2>
+      <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">Lemonade</h2>
       <div className="max-h-[450px]">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 w-full text-xs font-extrabold text-white max-w-[800px] mx-auto">
           {foodItems.map((item, index) => (
@@ -84,10 +148,7 @@ function Smoothie () {
         </div>
       </div>
     </section>
-    <Frappecinnos/>
-    <Iced_Latte/>
-    </>
   );
 }
 
-export default Smoothie ;
+export default Lemonade ;

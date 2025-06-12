@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Dropdown from "@/Components/Dropdown";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
+import Dropdown from "./Dropdown";
+import Heading from "./Heading";
+import OrderButton from "./OrderButton";
 
 function Calzone() {
   const [modalImage, setModalImage] = useState(null);
@@ -14,21 +14,21 @@ function Calzone() {
     {
       name: "GrillOut Special Platter",
       sizes: {
-        PKR: "1149",
+        PKR: "1099",
       },
       image: "/calzoneassets/specialplatter.jpg",
     },
     {
-      name: "Calzone",
+      name: "Special Calzone",
       sizes: {
-        PKR: "890",
+        PKR: "850",
       },
       image: "/calzoneassets/calzone.jpg",
     },
     {
       name: "Cheezy Sticks",
       sizes: {
-        PKR: "549",
+        PKR: "499",
       },
       image: "/calzoneassets/Cheezysticks.jpeg",
     },

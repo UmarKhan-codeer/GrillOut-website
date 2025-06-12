@@ -1,10 +1,11 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Dropdown from "@/Components/Dropdown";
-import Heading from "@/Components/Heading";
-import OrderButton from "@/Components/OrderButton";
+import Heading from "./Heading";
+import OrderButton from "./OrderButton";
+import Dropdown2 from "./Dropdown2";
+import Icecreamflavours from "./Icecreamflavours";
 
-function Noodels() {
+function Ice_Cream() {
   const [modalImage, setModalImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -13,11 +14,13 @@ function Noodels() {
   // Updated to include multiple sizes for one food item
   const foodItems = [
     {
-      name: "Chicken Chowmein",
+      name: "Ice Cream",
       sizes: {
-        "PKR": "749",
+        "2 Scoops": "189",
+        "3 Scoops": "269",
+        "Family Cup": "699",
       },
-      image: "/noodels/chomein.jpg",
+      image: "/icecream.jpg",
     },
   ];
 
@@ -49,14 +52,15 @@ function Noodels() {
   }, []);
 
   return (
+    <>
     <section
       className={`bg-black py-6 relative ${isVisible ? "fade-in-up" : ""}`}
       ref={ref}
     >
       <Heading/>
-      <Dropdown />
+      <Dropdown2/>
       <h2 className="text-2xl pt-10 pb-4 font-extrabold text-white text-center mb-4">
-        Noodels
+      Ice Cream
       </h2>
       <div className="flex justify-center">
         <article className="flex flex-col items-center">
@@ -70,15 +74,15 @@ function Noodels() {
           <h3 className="self-center mt-3 text-xl w-full text-center min-w-[120px] text-white font-bold">
             {foodItems[0].name}
           </h3>
-          <div className="self-center mt-2">
+          <div className="self-center mt-2 flex justify-between w-full max-w-xs">
             {Object.entries(foodItems[0].sizes).map(([size, price]) => (
-              <div key={size} className="text-lg w-full text-yellow-400 flex justify-between mt-1">
-                <p className="text-lg font-bold">{size}</p>
-                <p className="text-lg font-bold ml-2">{price}</p>
+              <div key={size} className="flex flex-col text-yellow-400 items-center w-32">
+                <p className="text-lg  font-bold">{size}</p>
+                <p className="text-lg  font-bold">{price}</p>
               </div>
             ))}
           </div>
-         <OrderButton/>
+          <OrderButton/>
         </article>
       </div>
       {isModalOpen && (
@@ -102,7 +106,9 @@ function Noodels() {
         </div>
       )}
     </section>
+    <Icecreamflavours/>
+    </>
   );
 }
 
-export default Noodels;
+export default Ice_Cream;

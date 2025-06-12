@@ -16,17 +16,17 @@ function PizzaCategory() {
       name: "Crown Crust",
       sizes: {
         small: "______",
-        medium: "1199",
-        large: "1699",
+        medium: "1299",
+        large: "1799",
       },
       image: "pizzaassets/crowncrust.jpg",
     },
     {
       name: "Square Pizza",
       sizes: {
-        small: "749",
-        medium: "1299",
-        large: "1849",
+        small: "799",
+        medium: "1349",
+        large: "1899",
       },
       image: "pizzaassets/squarepizza.jpg",
     },
@@ -34,8 +34,8 @@ function PizzaCategory() {
       name: "Stuffed Crust",
       sizes: {
         small: "______",
-        medium: "1249",
-        large: "1849",
+        medium: "1299",
+        large: "1899",
       },
       image: "pizzaassets/stuffcrust.jpg",
     },
@@ -43,26 +43,26 @@ function PizzaCategory() {
       name: "Karara Tikka",
       sizes: {
         small: "______",
-        medium: "1099",
-        large: "1599",
+        medium: "1199",
+        large: "1699",
       },
       image: "/pizzaassets/kararatikka.jpg",
     },
     {
       name: "GrillOut Special",
       sizes: {
-        small: "699",
-        medium: "1049",
-        large: "1599",
+        small: "749",
+        medium: "1199",
+        large: "1699",
       },
       image: "/pizzaassets/specialpizza.jpg",
     },
     {
       name: "Seekh Kabab",
       sizes: {
-        small: "699",
-        medium: "1049",
-        large: "1599",
+        small: "749",
+        medium: "1149",
+        large: "1699",
       },
       image: "/pizzaassets/seekhkabab.jpg",
     },
@@ -70,72 +70,72 @@ function PizzaCategory() {
     {
       name: "Shahi Mughlai",
       sizes: {
-        small: "649",
-        medium: "1049",
-        large: "1549",
+        small: "749",
+        medium: "1149",
+        large: "1649",
       },
       image: "/pizzaassets/shahimuglai.jpg", // Replace with actual image URL
     },
     {
       name: "Chicken Supreme",
       sizes: {
-        small: "649",
-        medium: "1049",
-        large: "1549",
+        small: "749",
+        medium: "1149",
+        large: "1649",
       },
       image: "/pizzaassets/supreem.jpg", // Replace with actual image URL
     },
     {
       name: "Chicken Tikka",
       sizes: {
-        small: "649",
-        medium: "1049",
-        large: "1549",
+        small: "749",
+        medium: "1149",
+        large: "1649",
       },
       image: "/pizzaassets/tikkapizza.webp", // Replace with actual image URL
     },
     {
       name: "Chicken Fajita",
       sizes: {
-        small: "649",
-        medium: "1049",
-        large: "1549",
+        small: "749",
+        medium: "1149",
+        large: "1649",
       },
       image: "/pizzaassets/fajita.jpg", // Replace with actual image URL
     },
     {
       name: "Chicken Tandoori",
       sizes: {
-        small: "649",
-        medium: "1049", 
-        large: "1549",
+        small: "749",
+        medium: "1149", 
+        large: "1649",
       },
       image: "/pizzaassets/tandooripizza.jpg", // Replace with actual image URL
     },
     {
       name: "Peri Peri Special",
       sizes: {
-        small: "649",
-        medium: "1049",
-        large: "1549",
+        small: "749",
+        medium: "1149",
+        large: "1649",
       },
       image: "/pizzaassets/peripizza.jpg", // Replace with actual image URL
     },
     {
       name: "Cheese Lover",
       sizes: {
-        small: "649",
-        medium: "1049",
-        large: "1549",
+        small: "749",
+        medium: "1149",
+        large: "1649",
       },
       image: "/pizzaassets/cheeselover.jpg", // Replace with actual image URL
     },
     {
       name: "Hot n Spicy",
       sizes: {
-        small: "649",
-        medium: "1049",
-        large: "1549",
+        small: "749",
+        medium: "1149",
+        large: "1649",
       },
       image: "/pizzaassets/hotnspicy.jpg", // Replace with actual image URL
     },
