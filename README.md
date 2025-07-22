@@ -18,8 +18,6 @@ GrillOut is a sleek, modern, and fully responsive restaurant website built with 
 ## 📸 Preview
 
 ![GrillOut Screenshot](./public/preview.PNG)
-
-
 ---
 
 ## 🛠️ Tech Stack
@@ -48,32 +46,31 @@ npm install
 
 # Start the development server
 npm run dev
-Open your browser at http://localhost:3000
+```
 
-💬 WhatsApp Order Integration
-Customers can click the "Order Now" button, which redirects them to WhatsApp with a pre-filled message:
+Open your browser at: [http://localhost:3000](http://localhost:3000)
 
-js
-Copy
-Edit
-const phone = "923001234567"; // Replace with your number
-const message = "Hello, I’d like to place an order from the GrillOut menu!";
-const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-window.open(url, '_blank');
-📤 Deployment
+---
+
+## 📤 Deployment
+
 This project is live and hosted on Vercel.
 
-🔗 Live Demo: coming soon
-🔗 Repository: https://github.com/UmarKhan-codeer/grillout
+- 🔗 **Live Demo:**  [https://grillout-resturant-website-t71v.vercel.app/](https://grillout-resturant-website-t71v.vercel.app/)
+- 🔗 **Repository:** [https://github.com/UmarKhan-codeer/grillout](https://github.com/UmarKhan-codeer/grillout)
 
-🙌 Author
-Umer Javed
+---
 
-🔗 LinkedIn
+## 🙌 Author
 
-💻 GitHub
+**Umer Javed**
 
-🌐 Portfolio: coming soon
+- 🔗 [LinkedIn](https://www.linkedin.com/in/umerrjaved/)
+- 💻 [GitHub](https://github.com/UmarKhan-codeer)
+- 🌐 [Portfolio](https://portfolio-umer-pro.vercel.app/)
 
-📃 License
+---
+
+## 📃 License
+
 This project is open-source and available under the MIT License.
